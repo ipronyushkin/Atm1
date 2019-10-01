@@ -1,23 +1,22 @@
 package com.company;
 
 import org.junit.*;
-
 import java.util.*;
 
-public class TestGetAns {
-    private GetAns new_obj;
+public class TestAtm {
+    private Atm new_obj;
     private String str;
     private ArrayList<String> ans;
 
     @Before
-    public void GetObj(){
-        new_obj = new GetAns();
+    public void getObj(){
+        new_obj = new Atm();
         str = "";
         ans = new ArrayList<String>();
     }
 
     @Test
-    public void Test_getAnswer01() {
+    public void test_getAnswer01() {
         int cash = 5;
         int[] banknote = {2, 3};
         int ind = banknote.length - 1;
@@ -26,7 +25,7 @@ public class TestGetAns {
     }
 
     @Test
-    public void Test_getAnswer02() {
+    public void test_getAnswer02() {
         int cash = 4;
         int[] banknote = {1, 2};
         int ind = banknote.length - 1;
@@ -35,7 +34,7 @@ public class TestGetAns {
     }
 
     @Test
-    public void Test_getAnswer03() {
+    public void test_getAnswer03() {
         int cash = 9;
         int[] banknote = {5, 7};
         int ind = banknote.length - 1;
