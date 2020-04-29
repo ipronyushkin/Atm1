@@ -1,6 +1,7 @@
 package com.company;
 
 import org.junit.*;
+
 import java.util.*;
 
 public class TestAtm {
@@ -9,7 +10,7 @@ public class TestAtm {
     private ArrayList<String> ans;
 
     @Before
-    public void getObj(){
+    public void getObj() {
         new_obj = new Atm();
         str = "";
         ans = new ArrayList<String>();
